@@ -14,14 +14,23 @@
                 <h1>✨ Frame Your Photos ✨</h1>
             </div>
             
-            <p class="instructions">Upload your photo to add a Frame in Photo. Preview it here and download the full quality version.</p>
-            
+            <p class="instructions">Upload your photo to add a Frame in Photo. Select a frame and download the full quality version.</p>
+            <div class="frame-selector">
+                <label for="frame">Select Frame:</label>
+                <select id="frame">
+                    <!-- <option value="frame1.png">Frame 1</option>
+                    <option value="frame2.png">Frame 2</option>
+                    <option value="frame3.png">Frame 3</option> -->
+                </select>
+            </div>
             <div class="upload-container">
                 <label for="upload" class="custom-file-upload">
                     <i>📷</i> Choose an Image
                 </label>
                 <input type="file" id="upload" accept="image/*">
             </div>
+            
+         
             
             <div class="loading" id="loading">Processing your image... please wait</div>
             <canvas id="canvas"></canvas>
@@ -31,7 +40,7 @@
             </div>
         </div>
     </main>
-        <footer>
+    <footer>
         <p style="text-align: center;">Developed With ❤️ By <a href="https://bhandari-santosh.com.np" target="_blank">Santosh Bhandari</a></p>
     </footer>
 </body>

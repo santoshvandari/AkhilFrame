@@ -149,3 +149,62 @@ footer a:hover {
     height: 3px;
     background: linear-gradient(to right, transparent, #e74c3c, transparent);
 }
+/* Styling the select dropdown */
+.frame-selector {
+    margin-bottom: 20px;
+}
+
+.frame-selector label {
+    font-weight: bold;
+    color: #c0392b;
+    margin-right: 10px;
+}
+
+#frame {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #e74c3c;
+    border-radius: 8px;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(192, 57, 43, 0.2);
+}
+
+/* Hover and focus effects */
+#frame:hover,
+#frame:focus {
+    border-color: #c0392b;
+    box-shadow: 0 6px 8px rgba(192, 57, 43, 0.3);
+}
+
+/* Dropdown arrow styling */
+#frame::-ms-expand {
+    display: none;
+}
+
+#frame {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23e74c3c'><path d='M7 10l5 5 5-5H7z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 35px;
+}
+
+/* Styling for dropdown options */
+#frame option {
+    padding: 10px;
+    background: white;
+    color: #333;
+}
+
+/* Option hover effect (not all browsers support this) */
+#frame option:hover {
+    background: #e74c3c;
+    color: white;
+}
